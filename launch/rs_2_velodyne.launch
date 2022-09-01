@@ -1,0 +1,5 @@
+<launch>
+    <arg name="rs_in" value="XYZIRT" />
+    <arg name="velodyne_out" value="XYZIRT" />
+    <node pkg="rs_to_velodyne" type="rs_to_velodyne" name="rs_to_velodyne"  args="$(arg rs_in) $(arg velodyne_out)" output="screen" />
+ </launch>
